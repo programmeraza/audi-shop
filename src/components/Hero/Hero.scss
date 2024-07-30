@@ -1,0 +1,87 @@
+.hero {
+    background-image: url(/bgimg.jpg);
+    box-shadow: inset 0px 0px 160px 21px rgba(0,0,0,1.99);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100dvh;
+    position: relative;
+    // .hero__wrapper
+
+    &__wrapper {
+        position: absolute;
+        bottom: 120px;
+    }
+
+    // .hero__block
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
+    }
+
+    // .hero__title
+
+    &__title {
+        color: #fff;
+        font-size: clamp(1.375rem, 1.104rem + 1.35vw, 2.188rem);
+        font-weight: 600;
+    }
+
+    // .hero__text
+
+    &__text {
+        color: #fff;
+        font-size: 22px;
+    }
+
+
+    &__btn-flex {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .hero__btn1
+
+    &__btn1 {
+        width: max-content;
+        padding: 20px 30px;
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        font-size: 20px;
+        transition: all .6s;
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+
+    // .hero__btn2
+
+    &__btn2 {
+        width: max-content;
+        padding: 20px 30px;
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        font-size: 20px;
+        transition: all .6s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
