@@ -1,6 +1,8 @@
 import './App.scss'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import Shop from './components/Shop/Shop'
+import SwiperComponent from './components/SwiperComponents/SwiperComponents'
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
     <>
     <Header/>
     <Hero/>
+    <SwiperComponent/>
+    <Shop/>
     </>
   )
 }

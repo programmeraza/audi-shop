@@ -1,0 +1,107 @@
+.swiperr {
+    padding: 140px 0;
+    background-color: #fff;
+
+    @media (max-width: 425px) {
+        padding: 60px 0;
+    }
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+    }
+
+
+    &__slide {
+
+        &:nth-child(1) {
+            background-image: url(/slide1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 700px;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: 425px) {
+                height: 500px;
+            }
+        }
+        &:nth-child(2) {
+            background-image: url(/slide2.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 700px;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: 425px) {
+                height: 500px;
+            }
+        }
+        &:nth-child(3) {
+            background-image: url(/slide3.avif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 700px;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: 425px) {
+                height: 500px;
+            }
+        }
+        &:nth-child(4) {
+            background-image: url(/slide4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 700px;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: 425px) {
+                height: 500px;
+            }
+        }
+
+        p {
+            font-size: clamp(0.875rem, 0.75rem + 0.63vw, 1.25rem);
+            line-height: 26px;
+            color: #fff;
+            text-align: start;
+            padding: 80px 60px 80px 60px;
+            margin: 0 100px;
+            width: 480px;
+        }
+        @media (max-width: 640px) {
+            p {
+                padding: 60px 30px 60px 30px;
+                margin: 0 50px;
+                text-align: center;
+            }
+        }
+        @media (max-width: 425px) {
+            p {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.swiper-button-next:after {
+    color: #fff;
+    padding-right: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.swiper-button-prev:after {
+    color: #fff;
+    padding-left: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+

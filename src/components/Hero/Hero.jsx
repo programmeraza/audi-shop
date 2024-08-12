@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Hero.scss"
+import Pagination from '../Pagination/Pagination'
 
 const Hero = () => {
   return (
@@ -18,6 +19,7 @@ const Hero = () => {
             </div>
         </div>
     </div>
+    <Pagination/>
     </>
   )
 }
