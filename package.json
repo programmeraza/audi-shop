@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.25.1",
     "sass": "^1.77.8",
-    "swiper": "^11.1.9"
+    "swiper": "^11.1.9",
+    "switch": "^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

@@ -1,19 +1,20 @@
-import './App.scss'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Shop from './components/Shop/Shop'
-import SwiperComponent from './components/SwiperComponents/SwiperComponents'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.scss';
+import HomePages from './pages/HomePages';
+import LoginPages from './pages/LoginPages';
+import ErrorPages from './pages/ErrorPages';
 
 function App() {
-
   return (
-    <>
-    <Header/>
-    <Hero/>
-    <SwiperComponent/>
-    <Shop/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePages />} />
+        <Route path='/login' element={<LoginPages />} />
+        <Route path='*' element={<ErrorPages />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+
