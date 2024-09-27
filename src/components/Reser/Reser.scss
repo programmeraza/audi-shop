@@ -1,63 +1,103 @@
-
 .reser {
-    padding: 30px 0;
-		// .reser__wrapper
+  padding: 30px 0;
+  @media (max-width: 768px) {
+      padding: 100px 0 50px 0;
+  }
+  // .reser__wrapper
 
-		&__wrapper {
-            display: flex;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+
+
+  &__image {
+      width: 100%;
+      max-width: 167px;
+  }
+
+  // .reser__text
+
+  &__text {
+    font-size: 12px;
+    color: #000;
+    width: 100%;
+    max-width: 360px;
+    border-right: 1px solid grey;
+    padding: 0 30px 0 0;
+
+    @media (max-width: 1024px) {
+      border-bottom: 1px solid grey;
+      border-right: none;
+      padding: 0 0 30px 0;
+      text-align: center;
+    }
+  }
+
+
+  &__ul-flex {
+      display: flex;
+      align-items: start;
+      gap: 100px;
+      @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
-            gap: 45px;
-		}
-
-		// .reser__text
-
-		&__text {
-            font-size: 12px;
-            color: #000;
-            width: 360px;
-            border-right: 1px solid grey;
-            padding-right: 30px;
-		}
+            gap: 50px;
+      }
+  }
 
 
-		// .reser__ul
+  &__ul-flex-direction {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      @media (max-width: 425px) {
+            gap: 70px;
+      }
+  }
 
-		&__ul {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 20px;
-		}
+  // .reser__ul
 
-		// .reser__follow
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
 
-		&__follow {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 27px;
-        }
+  // .reser__follow
 
-		// .reser__icon
+  &__follow {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 27px;
+  }
 
-		&__icon {
-            display: flex;
-            align-items: center;
-            gap: 22px;
-		}
+  // .reser__icon
 
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 22px;
 
-        &__content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
+  }
 
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 
-        &__text-footer {
-            font-size: 12px;
-            color: grey;
-        }
+  &__text-footer {
+    font-size: 12px;
+    color: grey;
+  }
 }

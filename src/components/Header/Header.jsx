@@ -30,8 +30,8 @@ const Header = () => {
             <div className="header__wrapper">
                 <img src="/audi-logo.png" alt="logo" />
                 <ul className="header__ul">
-                    <a href="#">RS-eTron</a>
-                    <a href="#">Models</a>
+                    <a href="/">RS-eTron</a>
+                    <a href="/shop">Models</a>
                     <a href="#">Discover</a>
                     <a href="#">Login</a>
                 </ul>
@@ -44,8 +44,8 @@ const Header = () => {
 
                 <div className={isOpen ? 'header__menu active' : 'header__menu'}>
                     <ul className="header__inner">
-                        <a onClick={toggleCloseMenu} href="#">RS-eTron</a>
-                        <a onClick={toggleCloseMenu} href="#">Models</a>
+                        <a onClick={toggleCloseMenu} href="/">RS-eTron</a>
+                        <a onClick={toggleCloseMenu} href="/shop">Models</a>
                         <a onClick={toggleCloseMenu} href="#">Discover</a>
                         <a onClick={toggleCloseMenu} href="#">Login</a>
                     </ul>
